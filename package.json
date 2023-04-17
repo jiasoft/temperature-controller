@@ -1,6 +1,6 @@
 {
   "name": "temperature-controller",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "温度控制器,vue3 组件",
   "type": "module",
   "main":"./dist/temperature-controller.umd.cjs",
@@ -11,8 +11,13 @@
       "require":"./dist/temperature-controller.umd.cjs"
     }
   },
+  "./*": "./*",
   "files":[
-    "dist/*"
+    "./dist/*"
+  ],
+  "style": "./dist/style.css",
+  "sideEffects": [
+    "./dist/*"
   ],
   "scripts": {
     "dev": "vite",

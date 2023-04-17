@@ -120,13 +120,12 @@ const findNearRotate = (rotate: number): number => {
   }
   return curRotate;
 };
-const radius = (240) / 2; //半径
+const radius = (props.width) / 2; //半径
 /**
  * 画刻度
  */
 const drawDial = () => {
   const c2d = wrapperView.value.getContext("2d");
-  console.log(c2d);
   c2d.translate(radius, radius);
   drawArc(c2d);
   const list = getwRotateListByStep();
