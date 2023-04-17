@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "description": "温度控制器,vue3 组件",
   "type": "module",
+  "main":"./dist/temperature-controller.umd.cjs",
+  "module": "./dist/temperature-controller.js",
+  "exports": {
+    ".": {
+      "import":"./dist/temperature-controller.js",
+      "require":"./dist/temperature-controller.umd.cjs"
+    }
+  },
+  "files":[
+    "dist/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
